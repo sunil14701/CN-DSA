@@ -1,12 +1,18 @@
 #include <iostream>
 using namespace std;
 
-void updateValue(int *p){
-    *p = 610 % 255;
-}
+int x = 1;
 
-int main(){
-    char ch = 'A';
-    updateValue((int*)&ch);
-    cout << ch;
+void print()
+{
+    int x = 2;
+    {
+        int x = 3;
+        cout << x << endl;
+    }
+}
+int main()
+{
+    print();
+    return 0;
 }
