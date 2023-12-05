@@ -30,7 +30,7 @@ int main()
 
     // double d = 34.3434343;
     // double *ptrd = &d;
-    // cout << sizeof(f) << " " << sizeof(ptrf) << endl; // pointer size is same
+    // cout << sizeof(f) << " " << sizeof(ptrf) << endl; // pointer size is same for every datatype
     // cout << sizeof(d) << " " << sizeof(ptrd) << endl;
 
     int i;
@@ -39,7 +39,7 @@ int main()
     cout << i << endl;
     int *p = NULL;
     cout << p << endl;
-    cout << *p << endl;// dangerous as access mem which i dont know
+    cout << *p << endl;// dangerous as access memory which i dont know if pointer is not initilized with other value
     cout << &p << endl;
 
     return 0;
