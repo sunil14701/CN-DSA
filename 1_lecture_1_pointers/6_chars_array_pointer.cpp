@@ -17,6 +17,14 @@ int main()
     char c1 = 'v';
     char *pc = &c1;
     cout << c1 << endl;
-    cout << pc << endl;
+    cout << pc << endl;// here pointer work diff
+
+    char c2[] = {'a', 'b'};
+    for (int i = 0; i < 2; i++)
+    {
+        cout << c2[i] << " ";
+    }
+    cout << endl;
+    cout << c2 << endl;
     return 0;
 }

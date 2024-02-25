@@ -6,16 +6,14 @@ void incr1(int **p){
 }
 
 void incr2(int **p){
-    *p = *p+1; // changes will be reflected as addres pe jake change hua hai
+    *p = *p+1; // changes will be reflected in main p as addres pe jake change hua hai
 }
 
 void incr3(int **p){
     **p = **p+1;// value changes will be reflected as addres pe jake change hua hai
 }
 
-void incr1(int **p){
-    p = p+1;
-}
+
 
 int main()
 {

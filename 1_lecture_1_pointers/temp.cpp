@@ -1,19 +1,14 @@
 #include <iostream>
 using namespace std;
-
 int main()
 {
-    int i = 10;
-    cout << i << " " << &i << endl;
-    int *p = &i;
-    cout << p << endl;
-
-    i++;
-    (*p)++;
-    cout << i << endl;
-    int *ptr = NULL;
-    cout << *ptr << endl;
-    // *(ptr)++;
-    // cout << *ptr << endl;
+    char arr[20];
+    int i;
+    for (i = 0; i < 10; i++)
+    {
+        *(arr + i) = 65 + i;
+    }
+    *(arr + i) = '\0';
+    cout << arr;
     return 0;
 }
